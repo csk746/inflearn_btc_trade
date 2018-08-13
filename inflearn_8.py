@@ -19,7 +19,7 @@ bot = telegram.Bot(token = my_token)
 message = '트레이딩 봇 시작!'
 
 # bot.sendMessage(chat_id=chat_id, text=message)
-
+is_buy = False
 while True:
     nonce = str(time.time())
     method = 'POST'
@@ -70,7 +70,7 @@ while True:
     print(avg_min_15)
     print(avg_min_50)
 
-    is_buy = False
+
     if avg_min_15 > avg_min_50 * 1.004 and is_buy == False:
         request_body = {
             "amount": 0.001,

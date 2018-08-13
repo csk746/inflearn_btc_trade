@@ -20,6 +20,7 @@ message = '트레이딩 봇 시작!'
 
 # bot.sendMessage(chat_id=chat_id, text=message)
 rsi_status = ''
+is_buy = False
 while True:
     nonce = str(time.time())
     method = 'POST'
@@ -49,7 +50,7 @@ while True:
 
     if rsi[-1] < 30:
         rsi_status='low'
-    elif 30<=rsi[-1]<70:
+    elif 30<=rsi[-1]<70 and is_buy==False:
         if rsi_status == 'low':
             print('rsi 상향 돌파!')
             request_body = {
@@ -83,7 +84,7 @@ while True:
             bot.sendMessage(chat_id=chat_id, text=message)
 
             print('매수')
-        if rsi_status == 'high':
+        if rsi_status == 'high'and is_buy==True:
             print('rsi 하향 돌파!')
             request_body = {
                 "amount": 0.001,
@@ -149,7 +150,7 @@ while True:
     # print(avg_min_15)
     # print(avg_min_50)
 
-    is_buy = False
+
     if avg_min_15 > avg_min_50 * 1.004 and is_buy == False:
         request_body = {
             "amount": 0.001,

@@ -119,9 +119,9 @@ while True:
     if rsi[-1] < 30:
         rsi_status='low'
     elif 30<=rsi[-1]<70:
-        if rsi_status == 'low':
+        if rsi_status == 'low' and is_buy == False:
             print('rsi 상향 돌파!')
-        if rsi_status == 'high':
+        if rsi_status == 'high' and is_buy == True:
             print('rsi 하향 돌파!')
         rsi_status = 'middle'
     else:
