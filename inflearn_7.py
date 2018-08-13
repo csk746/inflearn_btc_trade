@@ -4,11 +4,11 @@ import time
 import time, base64, hmac, hashlib, requests, json
 import telegram
 
-apikey = '3fcdf0c7-078b-43b0-a09b-ffc6143573e9'
-secret = '9akSvT8klk3SxE0YneRHS+WVk3Lv462SNt/jM9bRa8S5fMiXxIwxYPk5teMrGxz6Xxuq+MBcuIIhUK0GOz6mVg=='
+apikey = ''
+secret = ''
 
-my_token = '612185624:AAHioMOPPjQejvv99aVYsocKlQsCISx7cE8'
-chat_id = '341006364'
+my_token = ''
+chat_id = ''
 
 bot = telegram.Bot(token = my_token)
 

@@ -2,8 +2,8 @@
 import requests
 import time
 
-API_TOCKEN = '3fcdf0c7-078b-43b0-a09b-ffc6143573e9'
-SECRET_KEY = '9akSvT8klk3SxE0YneRHS+WVk3Lv462SNt/jM9bRa8S5fMiXxIwxYPk5teMrGxz6Xxuq+MBcuIIhUK0GOz6mVg=='
+API_TOCKEN = ''
+SECRET_KEY = ''
 r = requests.get('https://api.gopax.co.kr/trading-pairs')
 
 # print(r.json())

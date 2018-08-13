@@ -3,8 +3,8 @@ import requests
 import time
 import time, base64, hmac, hashlib, requests, json
 
-apikey = '3fcdf0c7-078b-43b0-a09b-ffc6143573e9'
-secret = '9akSvT8klk3SxE0YneRHS+WVk3Lv462SNt/jM9bRa8S5fMiXxIwxYPk5teMrGxz6Xxuq+MBcuIIhUK0GOz6mVg=='
+apikey = ''
+secret = ''
 
 while True:
     nonce = str(time.time())

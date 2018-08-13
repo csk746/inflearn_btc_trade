@@ -4,8 +4,8 @@
 import time, base64, hmac, hashlib, requests, json
 
 # 발급받은 api키와 시크릿키를 입력한다
-apikey = '3fcdf0c7-078b-43b0-a09b-ffc6143573e9'
-secret = '9akSvT8klk3SxE0YneRHS+WVk3Lv462SNt/jM9bRa8S5fMiXxIwxYPk5teMrGxz6Xxuq+MBcuIIhUK0GOz6mVg=='
+apikey = ''
+secret = ''
 
 # nonce값 생성
 nonce = str(time.time())
